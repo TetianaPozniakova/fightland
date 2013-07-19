@@ -1,0 +1,15 @@
+{% extends "easy_news/news_base.html" %}
+{% block title %}Последние новости{% endblock %}
+{% block content_title %}Последние новости{% endblock %}
+{% block content %}
+  {% include "easy_news/news_include.html" %}
+  <!-- Years list -->
+  <div class="pagination pagination-small pagination-centered">
+  <ul>
+    {% for date in date_list %}
+      <li><a href="{% url news_archive_year date|date:"Y" %}">{{ date|date:"Y" }}</a></li>
+    {% endfor %}
+      <li><a href="{% url news_archive_index %}">Все новости</a></li>
+  </ul>
+  </div>
+{% endblock %}

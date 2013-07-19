@@ -1,0 +1,188 @@
+/*
+ * Fightland CSS style for base template.
+ * Copyright (c) 2012, 3PS Studios.
+ */
+
+.navbar-inner {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  background: #5e5e5e; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VhYjkyZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNzk4MTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #5e5e5e 0%, #000000 70%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5e5e5e), color-stop(70%,#000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #5e5e5e 0%,#000000 70%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #5e5e5e 0%,#000000 70%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #5e5e5e 0%,#000000 70%); /* IE10+ */
+  background: linear-gradient(to bottom,  #5e5e5e 0%,#000000 70%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+  border: 1px solid #000000;
+}
+
+.navbar .divider-vertical {
+  height: 19px;
+  margin-top: 3px;
+  border-left: 1px solid #e79a67;
+  border-right: 1px solid #e79a67;
+}
+
+.navbar .nav {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.navbar .nav > li {
+  float: none;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background-color: transparent;
+}
+
+.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+html, body {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+  min-height: 100%;
+	height: auto !important;
+	background: #000000;
+	background-image:url('/media/images/stripes.png');
+	background-repeat:repeat;
+}
+
+.container {
+	width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 20px auto 0;
+	border-left: 1px solid #320064;
+	border-right: 1px solid #320064;
+	background: #060009;
+	background-image:url('/media/images/tile2.png');
+	/*background-repeat:repeat;*/
+}
+
+#logo {
+	width: 100%;
+	height: 198px;
+	border-bottom: 1px solid #320064;
+	background-image: url('/media/images/timeline.png');
+}
+
+#footer {
+	height: 25px;
+	background: #000000;
+ 	border-top: 1px solid #320064;
+	color: #320064;
+	text-align: center;
+	padding-top: 4px;
+}
+
+#footer a:link, a:visited{
+	text-decoration: none;
+	color: #aa4400;
+}
+
+#footer a:hover{
+	text-decoration: none;
+	color: #803300;
+}
+
+.thumbnails {
+  display: inline-block;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.thumbnails > li {
+  display: inline-block;
+  float: none;
+}
+
+.thumbnail {
+  border: 1px solid #320064;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.thumbnail:hover {
+	border: 2px solid #ff5800;
+}
+
+.album-name {
+	text-align: center;
+  padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.album-name a:link, a:visited {
+	text-decoration: none;
+	color: #aa4400;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+  background-color: transparent;
+  border: 1px solid #ff5800;
+  color: #41235f;
+}
+
+.pagination ul > li > span > a {
+  color: #41235f;
+}
+
+/*TODO: Fix hover color*/
+.pagination ul > li > a:hover,
+.pagination ul > li > a:focus,
+.pagination ul > li :hover,
+.pagination ul > li :focus{
+  color: #ff5800;
+  text-decoration: none;
+  background-color: #aa4400;
+}
+
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  color: #41235f;
+  background-color: #ffcb58;
+}
+
+.pagination ul > .disabled > span,
+.pagination ul > .disabled > a,
+.pagination ul > .disabled > a:hover,
+.pagination ul > .disabled > a:focus {
+  color: #999999;
+  background-color: transparent;
+}
+
+#wrapper {
+ margin: 20px;
+}
+
+.album-title {
+	padding: 15px 0px 2px 20px;
+	color: #aa4400;
+	font-size: 18px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+

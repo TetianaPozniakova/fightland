@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load easy_news_tags %}
+{% block title %}Home page{% endblock %}
+{% block head %}
+<link href="/media/css/news.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+	{% show_news 4 %}
+	<a href="{% url news_archive_index %}">Все новости</a>
+{% endblock %}

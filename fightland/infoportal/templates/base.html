@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>FightLand :: Восточные единоборства :: {% block title %}{% endblock %}</title>
+    <script src="/media/js/jquery-latest.js"></script>
+		{% block head %}{% endblock %}
+    <link href="/media/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="/media/css/style.css" rel="stylesheet" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+    <script src="/media/bootstrap/js/bootstrap.js"></script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          <li class="active"><a href="/">Главная</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="/news/">Новости</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="/forum/">Форум</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="/gallery/">Галерея</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="/video/">Видео</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="/contacts/">Контакты</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="/links/">Ссылки</a></li>
+          <li class="divider-vertical"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div id="logo"></div>
+      <div id="wrapper">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    <div id="footer">
+        Дизайн и реализация: 3PS. Copyright &copy; 2012, <a href="http://3ps.if.ua">3PS</a>.
+    </div>
+  </body>
+</html>
